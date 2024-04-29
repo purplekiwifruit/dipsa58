@@ -1,0 +1,7 @@
+node_modules
+
+// for all files end with.log
+*.log
+
+//for all files with the secret
+*.secret.*
