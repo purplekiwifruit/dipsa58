@@ -1,0 +1,8 @@
+//ignore a single file by proving the file name
+node_modules
+
+// for all files end with.log
+*.log
+
+//for all files with the secret
+*.secret.*
