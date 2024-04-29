@@ -4,6 +4,7 @@ const { join } = require('path')
 const { engine } = require('express-handlebars')
 
 //This is a comment
+// Another useless comment
 
 const PORT = parseInt(process.env.PORT) || 3000
 
