@@ -18,3 +18,9 @@ jobs:
       - name: echo the git branch
         run: echo "hello, Github branch is ${{ github.ref }}"
         # Corrected to use 'github.ref' to get the branch name
+
+      - name: Cowsays
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+          text: 'ship ship ship!'
+          color: 'green'
