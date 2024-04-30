@@ -1,0 +1,13 @@
+{
+    "name": "Acme",
+    "address": {
+        "Street" : "1 boonlay",
+        "postcode": "adb13"
+    },
+    "products": [
+        "books",
+        {
+            "Car": ["mazda", "toyota"]
+        }
+    ]
+}

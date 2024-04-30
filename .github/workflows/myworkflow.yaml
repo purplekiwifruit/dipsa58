@@ -1,0 +1,26 @@
+name: my first workflow
+
+#trigger
+on:
+- push  #this will run on any push
+
+
+jobs:
+  #name of your job
+  my-first-job:
+    #runner
+    runs-on:ubuntu-latest
+    
+    #steps of your job [in array]
+    steps:
+    - name: echo the date
+      run:echo "hello, Github Action $(date)"
+      
+    - name: echo the git branch
+      run:echo "hello, Github branch is ${{github.repositoryUrl}}"  #github is a special variable
+    
+
+    
+
+
+  

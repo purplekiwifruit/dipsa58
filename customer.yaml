@@ -1,0 +1,9 @@
+name: "Acme"
+address: 
+  street: 1 boonlay
+  postcode: abcd123
+products:
+- books,
+- car:
+  - mazda
+  - toyota
