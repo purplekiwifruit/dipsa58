@@ -1,26 +1,20 @@
 name: my first workflow
 
-#trigger
+# Trigger
 on:
-- push  #this will run on any push
-
+  push  # This will run on any push
 
 jobs:
-  #name of your job
+  # Name of your job
   my-first-job:
-    #runner
-    runs-on:ubuntu-latest
+    # Runner
+    runs-on: ubuntu-latest
     
-    #steps of your job [in array]
+    # Steps of your job [in array]
     steps:
-    - name: echo the date
-      run:echo "hello, Github Action $(date)"
-      
-    - name: echo the git branch
-      run:echo "hello, Github branch is ${{github.repositoryUrl}}"  #github is a special variable
-    
+      - name: echo the date
+        run: echo "hello, Github Action $(date)"
 
-    
-
-
-  
+      - name: echo the git branch
+        run: echo "hello, Github branch is ${{ github.ref }}"
+        # Corrected to use 'github.ref' to get the branch name
